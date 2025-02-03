@@ -21,6 +21,7 @@ def generate_image(seed, width, height, mean, std):
     image = np.random.normal(mean, std, (height, width))
     image = np.clip(image, 0, 255)
     image = image.astype(np.uint8)
+    ###python task1.py --registration_number 123456 --width 256 --height 256 --mean 128 --std 30 --output output.png
     ### END CODE HERE ###
 
     return image
