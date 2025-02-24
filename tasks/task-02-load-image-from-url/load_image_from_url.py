@@ -24,7 +24,6 @@ def load_image_from_url(url, **kwargs):
         return None
 
     image_data = np.asarray(bytearray(data), dtype=np.uint8)
-
     flag = kwargs.get('flags', cv.IMREAD_COLOR)
     image = cv.imdecode(image_data, flag)
     ### END CODE HERE ###
